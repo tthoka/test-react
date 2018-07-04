@@ -4,14 +4,19 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack",
+    "build:stats": "webpack --json > stats.json",
+    "start": "webpack-dev-server --hot"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "fetch-graphql-schema": "^0.2.1",
     "react": "^16.4.0",
     "react-dom": "^16.4.0",
-    "react-router-dom": "^4.3.1"
+    "react-helmet": "^5.2.0",
+    "react-router-dom": "^4.3.1",
+    "react-safety-helmet": "^6.2.1"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
